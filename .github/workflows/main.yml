@@ -270,6 +270,7 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+          destination_dir: huly
       - name: Upload Logs
         if: always()
         uses: actions/upload-artifact@v4
